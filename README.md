@@ -21,3 +21,6 @@ y=argmax(softmax(ai))
 the class with the biggest count is our prediction y to the vertex v.
 I test that idea on a graph with 10636 vertices and 639,750 edges.
 In this graph every vertex has a label from two classes. I split the labels into 20% train and 80% test. the result was almost random (50.25% accuracy). 
+
+# zero idea with svm
+I thought maybe the weights I chose can be more accurate, so I run an svm algorithm on my train vertices to estimate the best parameters. the result was still bad (50.36% accuracy).
