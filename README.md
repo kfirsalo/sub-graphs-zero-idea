@@ -28,8 +28,7 @@ I thought maybe the weights I chose can be more accurate, so I run an svm algori
 # simulation: add labels based on neighbors
 I build a simulation to check how the zero idea behave when every vertice get his out neighbor label in p_out and in neighbor in p_in.
 so I started with give 122 vertices with the higher rank and higher neighbors rank an initial random label. for every vertex v that hasn’t a label, if it has a neighbors with label I gave to v one of his neighbor label. I iteratively continue the process until convergence (no more labels added).
-an interesting outcome was the number of iteration as function of the p:
-![test](https://octodex.github.com/images/yaktocat.png)
+an interesting outcome was the number of iteration as function of the p: in p=0.001 there wad a big jump in the number of iteration require to convergence.
 I check the zero idea on the new label I made and the results shown below:
 when p_in = p_out = 0.5 the accuracy was 83%
 when p_in = p_out = 0.1 the accuracy was 63%
